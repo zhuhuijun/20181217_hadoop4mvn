@@ -19,9 +19,9 @@ public class TestSequenceFile
 {
 	public static void main(String[] args) throws Exception
 	{
-		// Write();
+		 Write();
 //		WriteWithSync();
-		InWriteNoCompression();
+		//InWriteNoCompression();
 	}
 
 	/**
@@ -34,7 +34,7 @@ public class TestSequenceFile
 		Configuration conf = new Configuration();
 		conf.set("fs.defaultFS", "hdfs://s100:8020");
 		FileSystem fs = FileSystem.get(conf);
-		Path path = new Path("hdfs://s100:8020/user/ubuntu/mysequencefile.seq");
+		Path path = new Path("hdfs://s100:8020/user/ubuntu/mysequencefile2.seq");
 		Writer writer = SequenceFile.createWriter(fs, conf, path, IntWritable.class, Text.class);
 		for (int i = 0; i < 100; i++)
 		{
