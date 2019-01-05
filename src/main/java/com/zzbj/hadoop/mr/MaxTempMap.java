@@ -23,7 +23,6 @@ public class MaxTempMap extends Mapper<LongWritable, Text, Text, IntWritable>
 			, Text value//
 			, Mapper<LongWritable, Text, Text, IntWritable>.Context context) throws IOException, InterruptedException
 	{
-		System.out.println("111111111111111");
 		String line = value.toString();
 		String year = line.substring(15, 19);
 		int airTemperature;

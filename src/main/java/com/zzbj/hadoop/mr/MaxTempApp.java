@@ -17,7 +17,10 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class MaxTempApp {
 
 	public static void main(String[] args) throws Exception {
-		if (args.length != 2) {
+		String[] aa = new String[2];
+		aa[0]="/user/ncdc/1901.gz";
+		aa[1]="/user/out";
+		if (aa.length != 2) {
 			System.err.println("Usage: max temp <inputpath> <outputpath>");
 			System.exit(-1);
 		}
@@ -25,8 +28,8 @@ public class MaxTempApp {
 		Job job = Job.getInstance();
 		job.setJarByClass(MaxTempApp.class);
 		job.setJobName("Max Temperature");// 设置作业名称的
-		FileInputFormat.addInputPath(job, new Path(args[0])); // 设置输入路径
-		FileOutputFormat.setOutputPath(job, new Path(args[1])); // 设置输出路径
+		FileInputFormat.addInputPath(job, new Path(aa[0])); // 设置输入路径
+		FileOutputFormat.setOutputPath(job, new Path(aa[1])); // 设置输出路径
 		job.setMapperClass(MaxTempMap.class);
 		job.setReducerClass(MaxTempReducer.class);
 		job.setOutputKeyClass(Text.class);
