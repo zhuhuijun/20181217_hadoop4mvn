@@ -19,7 +19,7 @@ public class MaxTempApp {
 	public static void main(String[] args) throws Exception {
 		String[] aa = new String[2];
 		aa[0]="/user/ncdc/1901.gz";
-		aa[1]="/user/out6";
+		aa[1]="/user/out10";
 		if (aa.length != 2) {
 			System.err.println("Usage: max temp <inputpath> <outputpath>");
 			System.exit(-1);
