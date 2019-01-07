@@ -17,9 +17,14 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class MaxTempApp {
 
 	public static void main(String[] args) throws Exception {
+		
 		String[] aa = new String[2];
 		aa[0]="/user/ncdc/1901.gz";
 		aa[1]="/user/out10";
+		if (args.length==2) {
+			aa[0] = args[0];
+			aa[1] = args[1];
+		}
 		if (aa.length != 2) {
 			System.err.println("Usage: max temp <inputpath> <outputpath>");
 			System.exit(-1);
