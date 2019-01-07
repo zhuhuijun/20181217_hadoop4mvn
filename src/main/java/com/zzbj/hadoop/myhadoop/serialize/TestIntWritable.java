@@ -8,8 +8,6 @@ import java.io.DataOutputStream;
 import org.apache.hadoop.io.IntWritable;
 import org.junit.Test;
 
-import com.sun.org.apache.xml.internal.security.c14n.helper.C14nHelper;
-
 public class TestIntWritable
 {
 	/***
