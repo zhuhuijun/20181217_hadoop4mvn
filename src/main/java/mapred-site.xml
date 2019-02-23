@@ -4,4 +4,8 @@
 		<name>mapreduce.framework.name</name>
 		<value>yarn</value>
 	</property>
+	<property>
+		<name>mapreduce.job.counters.limit</name>
+		<value>120</value>
+	</property>
 </configuration>
