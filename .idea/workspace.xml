@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7a7305c-9bad-45c0-8fe2-4dbd66f2a9b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/outputformat/db/WordDBWritable.java" afterPath="$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/outputformat/db/WordDBWritable.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,44 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HadoopUserDBWritable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/HadoopUserDBWritable.java">
+      <file leaf-file-name="MaxTempMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/sort/sample/MaxTempMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/DBMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="292">
+              <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyDBApp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/MyDBApp.java">
+      <file leaf-file-name="MaxTempReducer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/sort/sample/MaxTempReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="80">
+              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -79,6 +56,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/HadoopUserDBWritable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/DBMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/MyDBApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/sort/sample/MaxTempReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/sort/sample/MaxTempMap.java" />
       </list>
     </option>
   </component>
@@ -97,7 +76,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages ProjectPane="true" />
       <showMembers ProjectPane="true" />
       <showModules />
@@ -110,13 +89,55 @@
       <manualOrder />
       <foldersAlwaysOnTop value="false" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="myhadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myhadoop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myhadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myhadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myhadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myhadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myhadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myhadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myhadoop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myhadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/zhuhuijun/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapred/lib/db/DBInputFormat.class&#10;DBInputFormat&#9;PSI&#9;JAVA://org.apache.hadoop.mapreduce.lib.db.DBInputFormat" />
   </component>
   <component name="RecentsManager">
@@ -236,14 +257,15 @@
       <workItem from="1550994882997" duration="1049000" />
       <workItem from="1551014814349" duration="2086000" />
       <workItem from="1551084863170" duration="48000" />
+      <workItem from="1552139187103" duration="178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5376000" />
+    <option name="totallyTimeSpent" value="5554000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -253,8 +275,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293919" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -264,8 +286,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -287,21 +309,58 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/HadoopUserDBWritable.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#503#504#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#561#562#0" expanded="false" />
+            <element signature="e#589#590#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#647#648#0" expanded="false" />
+            <element signature="e#687#688#0" expanded="false" />
+            <element signature="e#719#720#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#772#773#0" expanded="false" />
+            <element signature="e#807#808#0" expanded="false" />
+            <element signature="e#837#838#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/DBMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/MyDBApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/HadoopUserDBWritable.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#561#562#0" expanded="false" />
+            <element signature="e#589#590#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#647#648#0" expanded="false" />
+            <element signature="e#687#688#0" expanded="false" />
+            <element signature="e#719#720#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#772#773#0" expanded="false" />
+            <element signature="e#807#808#0" expanded="false" />
+            <element signature="e#837#838#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -432,18 +491,18 @@
         <state relative-caret-position="234">
           <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#561#562#0" expanded="false" />
+            <element signature="e#589#590#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#647#648#0" expanded="false" />
+            <element signature="e#687#688#0" expanded="false" />
+            <element signature="e#719#720#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#772#773#0" expanded="false" />
+            <element signature="e#807#808#0" expanded="false" />
+            <element signature="e#837#838#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -458,8 +517,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/inputformat/db/MyDBApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="518">
+          <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/sort/sample/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/sort/sample/MaxTempMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzbj/hadoop/sort/sample/MaxTempReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
         </state>
       </provider>

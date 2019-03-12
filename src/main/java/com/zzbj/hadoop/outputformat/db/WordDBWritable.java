@@ -48,7 +48,6 @@ public class WordDBWritable implements DBWritable, WritableComparable<WordDBWrit
 	}
 
 	public void readFields(ResultSet resultSet) throws SQLException {
-
 	}
 
 	public int compareTo(WordDBWritable o) {
