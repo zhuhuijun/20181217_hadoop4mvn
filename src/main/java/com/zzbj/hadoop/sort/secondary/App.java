@@ -4,6 +4,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -36,9 +37,15 @@ public class App {
 
 		job.setMapperClass(MaxTempMap.class);
 		job.setReducerClass(MaxTempReducer.class);
-		job.setOutputKeyClass(Text.class);
-		job.setOutputValueClass(IntWritable.class);
+		job.setOutputKeyClass(CombineKey.class);
+		job.setOutputValueClass(NullWritable.class);
 
+		job.setPartitionerClass(YearPartitioner.class);
+		// 在到达reduce之前对key进行排序
+		job.setSortComparatorClass(CombineSortComparator.class);
+		job.setGroupingComparatorClass(YearGroupComparator.class);
+
+		job.setNumReduceTasks(2);
 		System.out.println(configuration.get("fs.defaultFS"));
 		System.out.println("over!!!!!!");
 		System.exit(job.waitForCompletion(true) ? 1 : 0);

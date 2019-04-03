@@ -22,6 +22,8 @@ public class CombineKey implements WritableComparable<CombineKey> {
 		this.temp = temp;
 	}
 
+	public CombineKey() {}
+
 	public int getYear() {
 		return year;
 	}
@@ -59,6 +61,13 @@ public class CombineKey implements WritableComparable<CombineKey> {
 		} else {
 			return otemp - this.temp;
 		}
+	}
+
+	/**
+	 * 定义字符串
+	 */
+	public String toString() {
+		return year + " " + this.temp;
 	}
 
 }
